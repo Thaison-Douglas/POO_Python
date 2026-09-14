@@ -15,7 +15,6 @@ class ContaBancaria:
         else:
             return 'Saldo insuficiente'
 
-
 class ContaPoupanca(ContaBancaria):
     def render_juros(self, taxa):
         self.saldo += self.saldo * taxa
@@ -35,8 +34,7 @@ while opcao != 0:
     print('='*20)
     match opcao:
         case 1:
-            g1 = ContaPoupanca(input('Escreva o nome do titular: '), int(
-                input('Digite o saldo inicial da sua conta: ')))
+            g1 = ContaPoupanca(input('Escreva o nome do titular: '), int(input('Digite o saldo inicial da sua conta: ')))
         case 2:
             g1.ver_saldo()
         case 3:

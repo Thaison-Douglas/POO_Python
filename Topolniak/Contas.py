@@ -19,3 +19,10 @@ conta = ContaBancaria("Bombardiro Crocodilo", 100)
 conta.depositar(50)
 conta.sacar(30)
 conta.ver_saldo()
+
+contas = []
+for i in range(3):
+    nome = input('Nome: ')
+    saldo = int(input('Saldo: '))
+    conta = ContaBancaria(nome, saldo)
+    contas.append(conta)
